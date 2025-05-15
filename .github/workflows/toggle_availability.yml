@@ -24,7 +24,7 @@ jobs:
           cache-version: 1 # Increment this number if you need to re-download cached gems
 
       - name: Toggle availability
-        run: bin/toggle
+        run: bundle exec bin/toggle
 
       - name: Push changes
         run: |
