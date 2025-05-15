@@ -24,7 +24,7 @@ jobs:
           cache-version: 1 # Increment this number if you need to re-download cached gems
 
       - name: Nightly reset
-        run: bin/unavailable
+        run: bundle exec bin/unavailable
 
       - name: Push changes
         id: push
