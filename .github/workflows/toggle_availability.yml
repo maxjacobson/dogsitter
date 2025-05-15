@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: read write
 
 concurrency:
   group: "toggle"
@@ -22,7 +22,11 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 1 # Increment this number if you need to re-download cached gems
 
-      - run: |
+      - name: Toggle availability
+        run: bin/toggle
+
+      - name: Push changes
+        run: |
           bin/toggle
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
