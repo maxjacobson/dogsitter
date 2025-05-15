@@ -33,3 +33,6 @@ jobs:
           git add _data/properties.yml
           git commit --message "Toggled availability"
           git push
+
+      - name: Trigger build
+        run: gh workflow run Deploy
