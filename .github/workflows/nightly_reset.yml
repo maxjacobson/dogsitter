@@ -5,6 +5,8 @@ on:
     # Nightly at 04:00 UTC (approx midnight in New York)
     - cron: "0 4 * * *"
 
+  workflow_dispatch:
+
 permissions:
   actions: write
   contents: write
