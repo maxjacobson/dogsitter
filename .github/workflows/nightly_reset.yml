@@ -3,7 +3,7 @@ name: Nightly reset
 on:
   schedule:
     # Nightly at 04:00 UTC (approx midnight in New York)
-    cron: "0 4 * * *"
+    - cron: "0 4 * * *"
 
 permissions:
   actions: write
