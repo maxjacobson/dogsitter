@@ -1,6 +1,6 @@
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/dogsitter" # the subpath of your site, e.g. /blog
 title: "Armonk Dogsitter"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://maxjacobson.github.io/dogsitter/" # the base hostname & protocol for your site, e.g. http://example.com
 
 exclude:
   - .sass-cache/
