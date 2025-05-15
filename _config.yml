@@ -13,5 +13,4 @@ exclude:
 - vendor/ruby/
 - ".ruby-version"
 - bin/
-available: true
-date: May 14, 2025
+available: false
