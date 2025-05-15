@@ -1,4 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "logger"
+gem 'activesupport'
+gem 'jekyll'
+gem 'logger'
+gem 'rubocop'

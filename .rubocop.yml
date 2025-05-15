@@ -1,0 +1,7 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.4.3
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  EnforcedStyle: never

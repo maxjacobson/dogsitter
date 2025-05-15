@@ -1,7 +1,16 @@
 #!/usr/bin/env ruby
 
-require "yaml"
+require 'active_support/all'
+require 'yaml'
 
-data = YAML.load_file("./_data/properties.yml")
-data["available"] = !data["available"]
-File.write("./_data/properties.yml", data.to_yaml)
+Time.zone = 'America/New_York'
+
+data = YAML.load_file('./_data/properties.yml')
+
+today = Time.zone.now.strftime('%b %d, %Y')
+
+if data['available']
+  File.write('./_data/properties.yml', { 'available' => false }.to_yaml)
+else
+  File.write('./_data/properties.yml', { 'available' => true, 'date' => today }.to_yaml)
+end
