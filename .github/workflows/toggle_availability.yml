@@ -36,3 +36,5 @@ jobs:
 
       - name: Trigger build
         run: gh workflow run Deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
