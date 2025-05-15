@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "yaml"
+
+data = YAML.load_file("./_data/properties.yml")
+data["available"] = !data["available"]
+File.write("./_data/properties.yml", data.to_yaml)
