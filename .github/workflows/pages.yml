@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: echo "${{ var.PROPERTIES }}" > _data/properties.yml
+      - run: echo "${{ vars.PROPERTIES }}" > _data/properties.yml
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
