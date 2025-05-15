@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add _data/properties.yml
+          git add _config.yml
           if git commit --message "Reset to unavailable"; then
             git push
             echo "reset=1" >> $GITHUB_OUTPUT

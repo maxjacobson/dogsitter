@@ -5,8 +5,8 @@ layout: page
 <h1>{{ site.title }}</h1>
 
 
-{% if site.data.properties.available %}
-  <p>I am available today, {{ site.data.properties.date }}</p>
+{% if site.available %}
+  <p>I am available today, {{ site.date }}</p>
 {% else %}
   <p>I am <em>NOT</em> available today</p>
 {% endif %}

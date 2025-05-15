@@ -5,12 +5,16 @@ require 'yaml'
 
 Time.zone = 'America/New_York'
 
-data = YAML.load_file('./_data/properties.yml')
+data = YAML.load_file('./_config.yml')
 
 today = Time.zone.now.strftime('%b %d, %Y')
 
 if data['available']
-  File.write('./_data/properties.yml', { 'available' => false }.to_yaml)
+  data['available'] = false
+  data.delete('date')
 else
-  File.write('./_data/properties.yml', { 'available' => true, 'date' => today }.to_yaml)
+  data['available'] = true
+  data['date'] = today
 end
+
+File.write('./_config.yml', data.to_yaml)

@@ -2,4 +2,7 @@
 
 require 'yaml'
 
-File.write('./_data/properties.yml', { 'available' => false }.to_yaml)
+data = YAML.load_file('./_config.yml')
+data['available'] = false
+data.delete('date')
+File.write('./_config.yml', data.to_yaml)

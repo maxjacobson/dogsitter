@@ -1,15 +1,16 @@
-baseurl: "/dogsitter" # the subpath of your site, e.g. /blog
-title: "Armonk Dogsitter"
-url: "https://maxjacobson.github.io/dogsitter/" # the base hostname & protocol for your site, e.g. http://example.com
-
+---
+baseurl: "/dogsitter"
+title: Armonk Dogsitter
+url: https://maxjacobson.github.io/dogsitter/
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - .ruby-version
-  - bin/
+- ".sass-cache/"
+- ".jekyll-cache/"
+- Gemfile
+- Gemfile.lock
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- ".ruby-version"
+- bin/
+available: false
